@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            text-transform: capitalize;
+            /* text-align: center; */
+            font-size: 40px;
+            font-family: sans-serif;
+            background-color: blue;
+            width: 529px;
+            margin: 0% auto;
+            margin-bottom: 30px;
+
+
+        }
+
+        form {
+            background-color: rgba(17, 0, 255, 0.952);
+            margin: 0% auto;
+            padding: 20px;
+            width: 845px;
+            font-family: sans-serif;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px 5px black;
+            text-align: justify;
+            color: white;
+
+
+
+        }
+
+        .hay {
+            text-align: center;
+        }
+
+        .ab {
+            background: green;
+            width: 112px;
+            height: 55px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin-top: 25px;
+            margin-left: 10px;
+
+        }
+
+        .ba {
+            background: green;
+            width: 112px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin-left: 10px;
+            height: 55px;
+
+
+        }
+
+        .sub {
+            padding: 6px;
+            font-size: 21px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .set {
+            padding: 6px;
+            font-size: 20px;
+            color: blue;
+            font-weight:bold;
+            width: 89px;
+        }
+         
+        input {
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 2px 2px black;
+            /* background-color: rgba(0, 51, 128, 0.473); */
+            transition: all 0.2s ease-in-out;
+        }
+
+        .hwr {
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+        input:hover {
+        border: 3px solid red;
+            background-color:lawngreen;
+            font-size: 15px;
+            
+        }
+        .hwr:hover{
+            border: 3px solid red;
+            background-color:lawngreen;
+            font-size: 15px;
+        }
+
+        h1:hover{
+            font-size: 100px;
+            width: 700px;
+            background: red;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <h1>student regishtration form</h1>
+    <form action="#">
+        <table>
+            <tr>
+                <th>
+                    <label for="first">FIRST NAME</label>
+                </th>
+
+                <td> <input type="text" id="first" placeholder="Fname" name="password" minlength="1" maxlength="30"> </td>
+                <td colspan="3">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <th><label for="last">LAST NAME</label></th>
+
+                <td> <input type="text" id="last" placeholder="Lname" name="password" minlength="1" maxlength="30"> </td>
+                <td colspan="3">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+
+            <tr>
+                <th> <label for="dob">DATE OF BIRTH </label> </th>
+                <td> <input type="DATE" id="dob"> </td>
+
+
+            </tr>
+
+
+            </tr>
+            <tr>
+                <th><label for="email">EMAIL ID</label> </th>
+                <td><input type="email" id="email" placeholder="@gmail.com"></td>
+            </tr>
+            <tr>
+                <th><label for="phone"> MOBILE NUMBER</label></th>
+                <td><input type="tel" id="phone" placeholder="+92" name="password" minlength="11" maxlength="11"></td>
+                <td colspan="3">
+                    (11 digit number)
+                </td>
+            </tr>
+            <tr>
+                <th><label for="gender">GENDER</label></th>
+                <td> male<input type="radio" id="gender" name="2"> female <input type="radio" name="2"></td>
+            </tr>
+            <tr>
+                <th><label for="adress"> <br> <br> <br> <br> ADRESS</label></th>
+                <td><textarea id="adress" cols=" 20" rows="6" placeholder="add your adress here" class="hwr"></textarea></td> <br>
+            </tr>
+            <tr>
+                <th><label for="city">CITY</label></th>
+                <td><input type="text" id="city" name="password" minlength="1" maxlength="30"></td>
+                <td colspan="3">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <th><label for="pin">PIN CODE</label></th>
+                <td><input type="password" id="pin" placeholder="******" required  name="password" minlength="4" maxlength="6"></td>
+                <td colspan="3">(6 digit code)</td>
+            </tr>
+            <tr>
+                <th><label for="stste">STATE</label></th> <br>
+                <td><input type="text" id="stste" name="password" minlength="1" maxlength="30"></td>
+                <td colspan="3">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+
+                <th>COUNTRY</th>
+                <td><Select class="hwr">
+                        <option class="hwr"> select your country</option>
+                        <option>JAPAN</option>
+                        <option>PAKISTAN</option>
+                        <option>INDIA</option>
+                        <option>CHAINA</option>
+                        <option>IRAN </option>
+                    </Select>
+                    </Select></td>
+            </tr>
+            <tr>
+                <th>HOBBIES</th>
+                <td colspan="4"> Drawing<input type="radio"> Singing <input type="checkbox" > Dancing <input
+                        type="checkbox" > Sketching
+                    <input type="checkbox"> <br> <input type="checkbox" class="hwr"> Others <input type="text">
+                </td>
+
+
+            </tr>
+            <tr>
+        </table>
+        <table>
+            <th>QUALIFICATION</th>
+            </tr>
+            <td>
+                <tr>
+
+
+                    <td></td>
+
+                    <th>Sno</th>
+                    <th>Examinatation</th>
+                    <th class="hay">Board</th>
+                    <th class="hay">Percentage</th>
+                    <th class="hay">Year Of Passing</th>
+                </tr>
+                <tr>
+
+                    <th>
+            </td>
+            <th>1</th>
+            <th>Class X </th>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+
+                <th>2</th>
+                <th>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+
+
+                <td></td>
+                <th>3</th>
+                <th>Graduation</th>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+
+                <td></td>
+                <th>4</th>
+                <th>Masters</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+
+            </tr>
+
+
+            </td>
+            <tr>
+                <th>
+                    COURSES <br> APLLIED FOR
+                </th>
+                <!-- <td></td> -->
+
+                <td colspan="3">
+
+                    BCA <input type="radio" name="1">B.Com <input type="radio" name="1">B.Sc <input type="radio"
+                        name="1"> B.A <input type="radio" name="1">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <th colspan="2"><button class="ab"><input type="submit" class="sub"></button> <button class="ba"><input
+                            type="reset" class="set"></button></th>
+                <td> </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
